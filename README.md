@@ -67,14 +67,12 @@
 # DoubleClickSpaceRemover
 Remove Space Character after Double-Click (Android Mobile &amp; PC) 
 <br/>
-Convert plain text URLs into clickable links
-<br/>
 <br/>
 Removes trailing spaces when Double-Clicking to select a word.
 <br/>
-When double clicking a word that has a space following it, this extension allows you to exclude that space character to only select the word. 
+When double clicking a word that has a space following it, this extension allows you to exclude that space character and to only select the word.
 <br/>
-On top of this it also allows you to Include or Exclude multiple Punctuation Characters and/or Special Characters.
+On top of this it also allows you to Include or Exclude multiple Punctuation Characters and/or Special Characters.​
 <br/>
 While the "Exclude Space Character" may not appear checked visually in the Popup when first installed, it will still perform the function of Excluding Space Characters, unless changed in the popup.
 <br/>
@@ -86,6 +84,7 @@ Source Code: https://github.com/MagiKirby/DoubleClickSpaceRemover
 <br/>
 <br/>
 <br/>
+<br/>
 This Add-on performs the same function as:
 <br/>
 1.) Going to about:config
@@ -93,8 +92,10 @@ This Add-on performs the same function as:
 2.) Setting the preference "layout.word_select.eat_space_to_next_word" to False
 <br/>
 <br/>
+<br/>
 
-If you would like to use this extension on Android FireFox but can not directly install it, you can use "Mozilla Collections" which is a collection of extensions that installs on Mobile. Here is a Collection that contains this Add-on.
+
+If you would like to use this extension on Android Firefox but can not directly install it, you can use "Mozilla Collections" which is a collection of extensions that installs on Mobile. Here is a Collection that contains this Add-on.
 <br/>
 <br/>
 Collection Name: MagiKirby
@@ -108,8 +109,14 @@ Collection URL: https://addons.mozilla.org/en-US/firefox/collections/18229341/Ma
 
 
 *There is a very very short period of time where the space character will be included at first then be removed.
-
-[https://addons.mozilla.org/en-US/firefox/addon/makeurlsclickable/](https://addons.mozilla.org/en-US/firefox/addon/doubleclickspaceremover/)
+<br/>
+**This Add-on Auto-Saves after any checkbox has been changed, but the Update Variables button saves to your local add-on storage as well.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+[https://addons.mozilla.org/en-US/firefox/addon/DoubleClickSpaceRemover/](https://addons.mozilla.org/en-US/firefox/addon/doubleclickspaceremover/)
 
 
 
