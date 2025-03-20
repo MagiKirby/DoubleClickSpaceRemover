@@ -1,5 +1,5 @@
 <h1 align="center">DoubleClickSpaceRemover</h1>
-<h1 align="center">Remove Space Char after Double-Click (Android Mobile &amp; PC) </h1>
+<p align="center" >Remove Space Char after Double-Click (Android Mobile &amp; PC) </p>
 <p align="center">
   <img src="https://addons.mozilla.org/user-media/addon_icons/2902/2902990-128.png?modified=88ff26c0&1742446105595" alt="Sublime's custom image"/>
 </p>
@@ -37,7 +37,7 @@
 
 
 <p align="center">
-  <img src="https://addons.mozilla.org/user-media/previews/full/316/316822.png?modified=1742446074" alt="Extension OFF 1"  width="960" height="540"/>
+  <img src="https://addons.mozilla.org/user-media/previews/full/316/316829.png?modified=1742448886" alt="Extension OFF 1"  width="960" height="540"/>
 
   <img src="https://addons.mozilla.org/user-media/previews/full/316/316823.png?modified=1742446074" alt="Extension ON 1"  width="960" height="540"/>
 </p>
