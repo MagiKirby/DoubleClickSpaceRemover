@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Variables</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 500px;
+      padding: 30px;
+      background: linear-gradient(135deg, #f2f7f7, #b5c5f2);
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4e6a92;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    input[type="checkbox"] {
+      margin-left: 10px;
+      transform: scale(1.2);
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      width: 45%;
+      margin: 8px 2.5%;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Exclude All Button */
+    #excludeAllButton {
+      background: linear-gradient(45deg, #f44336, #e53935);
+      color: white;
+      font-weight: bold;
+    }
+
+    #excludeAllButton:hover {
+      background: linear-gradient(45deg, #e53935, #d32f2f);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #excludeAllButton:active {
+      background: linear-gradient(45deg, #d32f2f, #c62828);
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Include All Button */
+    #includeAllButton {
+      background: linear-gradient(45deg, #4caf50, #388e3c);
+      color: white;
+      font-weight: bold;
+    }
+
+    #includeAllButton:hover {
+      background: linear-gradient(45deg, #388e3c, #2c6e2f);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #includeAllButton:active {
+      background: linear-gradient(45deg, #2c6e2f, #1b5e20);
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Uncheck All Button */
+    #selectNoneButton {
+      background: linear-gradient(45deg, #607d8b, #455a64);  /* Neutral color */
+      color: white;
+      font-weight: bold;
+      width: 30%;  /* Smaller width for the button */
+      margin-top: 20px;
+    }
+
+    #selectNoneButton:hover {
+      background: linear-gradient(45deg, #455a64, #37474f);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #selectNoneButton:active {
+      background: linear-gradient(45deg, #37474f, #263238);
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Update Variables Button */
+    #updateButton {
+      background: linear-gradient(45deg, #00bcd4, #0097a7);
+      color: white;
+      width: 100%;
+      margin-top: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    #updateButton:hover {
+      background: linear-gradient(45deg, #0097a7, #00796b);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #updateButton:active {
+      background: linear-gradient(45deg, #00796b, #004d40);
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Flex container for buttons */
+    .button-container {
+      text-align: center;
+      display: flex;
+      justify-content: space-between; /* Distributes buttons across the row */
+      gap: 15px;
+    }
+
+    .button-container button {
+      width: 48%; /* Ensures buttons fit within the same row */
+    }
+
+    /* Flexbox for checkboxes grouping */
+    .checkbox-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .exclude-container,
+    .include-container {
+      width: 48%;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Control Variables</h1>
+
+  <div class="checkbox-container">
+    <!-- Exclude checkboxes on the left -->
+    <div class="exclude-container">
+      <label>
+        Exclude Space Character:
+        <input type="checkbox" id="var1_Exclude_Space">
+      </label>
+      <label>
+        Exclude Punctuation Marks:
+        <input type="checkbox" id="var3_Exclude_Punctuation">
+      </label>
+      <label>
+        Exclude Special Characters:
+        <input type="checkbox" id="var5_Exclude_SpecialChar">
+      </label>
+    </div>
+
+    <!-- Include checkboxes on the right -->
+    <div class="include-container">
+      <label>
+        Include Space Character:
+        <input type="checkbox" id="var2_Include_Space">
+      </label>
+      <label>
+        Include Punctuation Marks:
+        <input type="checkbox" id="var4_Include_Punctuation">
+      </label>
+      <label>
+        Include Special Characters:
+        <input type="checkbox" id="var6_Include_SpecialChar">
+      </label>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button id="excludeAllButton">Exclude All</button>
+    <button id="includeAllButton">Include All</button>
+  </div>
+
+  <!-- Center the smaller Uncheck All button -->
+  <div style="text-align: center;">
+    <button id="selectNoneButton">Uncheck All</button>
+  </div>
+
+  <button id="updateButton">Update Variables</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
