@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DoubleClickSpaceRemover",
-  "version": "0.9",
+  "version": "0.95",
   "author": "MagiKirby",
   "description": "Removes trailing spaces when double-clicking to select a word.",
   "homepage_url": "https://github.com/MagiKirby/DoubleClickSpaceRemover",
